@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() 
+{
+    char s[100];
+
+
+    printf("cumle girin: ");
+    gets(s);
+    
+    printf("cumle: ");
+    puts(s);
+return 0;
+}
