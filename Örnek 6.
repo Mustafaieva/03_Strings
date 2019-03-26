@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() 
+int main()
 {
     char cumle_1[100];
     char cumle_2[50];
@@ -16,15 +16,20 @@ return 0;
 }
     int karakter_sayisi(const char *s) {
     int i;
-    for (i = 0 ; s[i] != '\0' ; i++) 
+    for (i = 0 ; s[i] != '\0' ; i++)
         {
         }
 return i;
 }
 
-    void string_ekle(char *bastaki, const char *sondaki) 
+    void string_ekle(char *bastaki, const char *sondaki)
     {
         int bastaki_N = karakter_sayisi(bastaki);
         int sondaki_N = karakter_sayisi(sondaki);
-    
+
+        int i;
+        for (i = 0 ; i < sondaki_N ; i++)
+        bastaki[i+bastaki_N] = sondaki[i];
+        bastaki[bastaki_N+sondaki_N] = '\0';
+
      }
