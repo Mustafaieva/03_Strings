@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    char wrd[20];
+    int N;
+
+    int i;
+
+    printf("Input the word: ");
+    scanf("%s", wrd);
+    printf("The entered word: %s\n", wrd);
+    N=0;
+
+    while(wrd[N]!='\0')
+    {
+        N++;
+    }
+    printf("Number of characters: %d\n", N);
+
+    for (N = 0 ; wrd[N] != '\0' ; N++)
+    {
+
+    }
+    printf("Number of characters: %d\n", N);
+
+    printf("The characters of the string in reverse are: ");
+    for (i = N-1 ; i >= 0; i--)
+    {
+        printf("%c", wrd[i]);
+    }
+    printf("\n");
+
+
+return 0;
+}
